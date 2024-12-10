@@ -17,7 +17,7 @@ h2{
 }
 .boardbox{
     background: white;
-    width: 20rem;
+    width: 25rem;
     display: flex;
     border-radius: 10px;
     padding: 20px;
@@ -28,7 +28,7 @@ h2{
 .board{
     display: grid;
     gap: 3rem;
-    padding: 2.5rem;
+    padding: 2rem;
     justify-content: center;
     grid-template-columns: auto auto auto;
 }
@@ -37,6 +37,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
     border: 1px solid #5ADAFD;
     height: 2.5rem;
     width: 2.5rem;

@@ -1,8 +1,8 @@
 
-let currentPlayer='X'
 const cell=document.querySelectorAll(".cell")
-
+let currentPlayer='X'
 const hint=document.getElementById('hint')
+
 const winningCells=[
     [0,1,2],
     [3,4,5],
@@ -41,8 +41,8 @@ function clickedd(event){
     if(event.target.innerText===''){
         event.target.innerText=currentPlayer
         checkingScores(currentPlayer)
-     currentPlayer=(currentPlayer=='X') ? 'O' : 'X'
-     hint.innerText=`Turn on ${currentPlayer}`
+        currentPlayer=currentPlayer==='X' ? 'O' : 'X'; 
+        hint.innerText=`Turn on ${currentPlayer}`
     }
 
 }
@@ -54,9 +54,6 @@ function reset(){
     hint.innerText='First Player: X'
 
 }
-
-
-
 
 
 // function checkingScores(){
