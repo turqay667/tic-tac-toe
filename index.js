@@ -20,7 +20,7 @@ function checkingScores(player){
      if( cell[a].innerText===currentPlayer && cell[b].innerText===currentPlayer && cell[c].innerText===currentPlayer){
         setTimeout( ()=>
             Swal.fire({
-            title:player+ ' is winner',
+            title:'Player ' + player +' is winner',
             confirmButtonText:'Play again'
                }).then((result)=>{
                 if(result.isConfirmed){
