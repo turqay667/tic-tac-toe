@@ -4,7 +4,7 @@ padding: 0;
 box-sizing: border-box;
 }
 body{
-    background: #DFECF5;
+    background:  linear-gradient(135deg, #667eea 0%, #764ba2 100%);;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,10 +14,11 @@ h2{
     text-align: center;
     margin-top: 5rem;
     font-size: 5rem;
+    color: white;
 }
 .boardbox{
-    background: white;
-    width: 25rem;
+   background-color: rgba(255, 255, 255, 0.1);;
+    width: 23rem;
     display: flex;
     border-radius: 10px;
     padding: 20px;
@@ -33,7 +34,8 @@ h2{
     grid-template-columns: auto auto auto;
 }
 .cell{
-    background-color: #f5f5f5;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: bisque;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,5 +45,8 @@ h2{
     width: 2.5rem;
 }
 .hint{
-    color: green;
+    color: whitesmoke;
+}
+button{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }

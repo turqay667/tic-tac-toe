@@ -8,9 +8,9 @@
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-
+    <div class="pb-5">
+        <h2 class="text-xl font-bold text-center pb-5 mb-5">TIC TAC TOE</h2>
 <div class="boardbox">
-    <h2 class="text-xl font-bold">TIC TAC TOE</h2>
     <p class="hint pt-3" id="hint">First Player: X</p>
 <div class="board" id="board">
 <div class="cell" id="0" onclick="clickedd(event)"></div>
@@ -23,9 +23,11 @@
 <div class="cell" id="7" onclick="clickedd(event)"></div>
 <div class="cell" id="8" onclick="clickedd(event)"></div>
 </div>
+
 <div class="flex justify-center">
     <!-- <button type="button" class="bg-blue-400 text-blue-600 p-2 rounded-lg" onclick="start()">New Game</button> -->
-    <button type="button" class="bg-blue-400 text-white py-2 px-5 rounded-lg outline-none" onclick="reset()">Reset</button>
+    <button type="button" class="text-white bg-blue-400 py-2 px-5 rounded-lg outline-none" onclick="reset()">Reset</button>
+</div>
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
