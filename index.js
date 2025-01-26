@@ -4,6 +4,7 @@ let currentPlayer='X'
 const hint=document.getElementById('hint')
 const result=document.getElementById('result')
 let gameOver=false;
+
 const winningCells=[
     [0,1,2],
     [3,4,5],
@@ -54,7 +55,7 @@ function reset(){
     hint.innerText='First Player: X'
 
 }
-
+cell.forEach(index=>index.addEventListener('click', clickedd))
 
 // function checkingScores(){
 //     winningCells.some((item)=>{
