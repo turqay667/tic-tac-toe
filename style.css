@@ -47,9 +47,9 @@ h2{
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
-    height: 6vm;
+    height: 6vw;
     font-weight: bold;
-    width: 6vm;
+    width: 6vw;
     border-radius: 10px;
 }
 .cell:hover{
