@@ -2,7 +2,7 @@
 const cell=document.querySelectorAll(".cell")
 let currentPlayer='X'
 const hint=document.getElementById('hint')
-
+const result=document.getElementById('result')
 const winningCells=[
     [0,1,2],
     [3,4,5],
@@ -19,16 +19,8 @@ function checkingScores(player){
         const [a,b,c]=winningCells[i]
      if( cell[a].innerText===currentPlayer && cell[b].innerText===currentPlayer && cell[c].innerText===currentPlayer){
         setTimeout( ()=>
-            Swal.fire({
-            title:'Player ' + player +' is winner',
-            confirmButtonText:'Play again'
-               }).then((result)=>{
-                if(result.isConfirmed){
-                       reset()
-                }
-                    })
-
-               )
+          hint.innerText=`Winner is ${currentPlayer}`    
+        )
               return;
        
      }
