@@ -46,10 +46,10 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
-    height: 6vw;
+    font-size: 2.5rem;
+    width: 5rem;
+    height: 5rem;
     font-weight: bold;
-    width: 6vw;
     border-radius: 10px;
 }
 .cell:hover{
